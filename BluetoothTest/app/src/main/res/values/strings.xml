@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Bluetooth Test</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_scan">Scan</string>
+    <string name="action_cancelscan">Stop Scan</string>
+
+    <string name="Text">Status: </string>
+    <string name="on">Turn On</string>
+    <string name="off">Turn Off</string>
+    <string name="List">List paired Devices</string>
+    <string name="cancel">Cancel Search</string>
+
+</resources>

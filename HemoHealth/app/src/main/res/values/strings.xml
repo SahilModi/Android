@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">HemoHealth</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="incidentTypes">
+        <item>Bleed</item>
+        <item>Infusion</item>
+        <item>Note</item>
+    </string-array>
+
+    <string name="title_activity_infusion">Infusion</string>
+    <string name="doseTaken">Dose</string>
+    <string name="notes">Notes</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="importImage">Import Image</string>
+    <string name="takeImage">Take Image</string>
+    <string-array name="medicineTypes">
+        <item>Humate-P</item>
+        <item>Another One</item>
+        <item>Add More Here</item>
+    </string-array>
+    <string-array name="doseSelector">
+        <item>Minor Dose</item>
+        <item>Major Dose</item>
+        <item>Severe Dose</item>
+        <item>Custom Value</item>
+    </string-array>
+
+    <string name="title_activity_settings">Settings</string>
+    <string name="weight">Weight: </string>
+    <string name="submitSettings">Submit</string>
+    <string name="presetDosage">Preset Dosage</string>
+    <string name="severeDose">Severe Dose (units/kg):</string>
+    <string name="majorDose">Major Dose (units/kg):</string>
+    <string name="minorDose">Minor Dose (units/kg):</string>
+    <string name="minorDoseTotal">Minor Dose Total:</string>
+    <string name="majorDoseTotal">Major Dose Total:</string>
+    <string name="severeDoseTotal">Severe Dose Total:</string>
+    <string-array name="weightUnits">
+        <item>lbs</item>
+        <item>kg</item>
+    </string-array>
+    <string name="title_activity_bleed">Bleed</string>
+
+</resources>

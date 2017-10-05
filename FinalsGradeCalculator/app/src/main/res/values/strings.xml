@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Finals Calculator</string>
+    <string name="app_iconname">FNC</string>
+    <string name="action_switch">Menu Item 1</string>
+    <string name="menu_submit">Submit</string>
+    <string name="gradeText">Grade Needed: </string>
+    <string name="finalText">Final Grade: </string>
+    <string name="CurrentGrade">Current Grade: </string>
+    <string name="CurrentGrade_hint">(3.12) </string>
+    <string name="GradeDesired">Grade Desired: </string>
+    <string name="GradeDesired_hint">(3.21) </string>
+    <string name="GradeReceived">Grade Received: </string>
+    <string name="Weight">Weight: </string>
+    <string name="Weight_hint">(10)</string>
+
+    <string name="Incomplete">Please complete all fields</string>
+
+    <string name="settings">Settings</string>
+    <string name="changeLayout">Reverse Buttons</string>
+    <string name="selectionColors">Disable Selection Colors</string>
+    <string name="allColors">Disable All Colors</string>
+    <string name="menu_back">Back</string>
+
+    <string-array name="dropdownArray">
+        <item>A (3.21)</item>
+        <item>B (2.41)</item>
+        <item>C (1.61)</item>
+        <item>D (0.81)</item>
+        <item>E (0.00)</item>
+    </string-array>
+
+    <string-array name="dropdownArray2">
+        <item>A (4.00)</item>
+        <item>B (3.00)</item>
+        <item>C (2.00)</item>
+        <item>D (1.00)</item>
+        <item>E (0.00)</item>
+    </string-array>
+
+
+</resources>

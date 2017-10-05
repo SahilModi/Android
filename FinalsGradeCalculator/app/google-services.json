@@ -1,0 +1,50 @@
+{
+  "project_info": {
+    "project_number": "773526482040",
+    "firebase_url": "https://finals-calculator.firebaseio.com",
+    "project_id": "finals-calculator",
+    "storage_bucket": "finals-calculator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:773526482040:android:3a7c40b596943774",
+        "android_client_info": {
+          "package_name": "smapps.sahil.finalsgradecalculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "773526482040-g1t3bbqapmr78kg1g4rbvjspd50su6l5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "smapps.sahil.finalsgradecalculator",
+            "certificate_hash": "79e4cc58208c69b587875a7f00b87d9eb90cc1bc"
+          }
+        },
+        {
+          "client_id": "773526482040-p37fqj065m10h6db83gtvdpc9iur85hc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvLDgukQC2YGT8yNp3VNUEnvsATXTqIvk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

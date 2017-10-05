@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lights</string> <!-- Need a new name -->
+    <string name="toolbar_title">Lighting</string>
+    <string name="action_end">Disable Bluetooth</string> <!-- Shorten? -->
+
+    <string name="onButton">Light ON</string>
+    <string name="offButton">Light OFF</string>
+</resources>

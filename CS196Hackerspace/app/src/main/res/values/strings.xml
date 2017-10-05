@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CS196Hackerspace</string>
+
+    <string name="text_view_default">Hello, World!</string>
+    <string name="switch1_label">Enable Button</string>
+    <string name="text_view_disabled">Button Disabled</string>
+    <string name="checkbox_enable">Enable Everything</string>
+    <string name="button_main">Click Me</string>
+
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Final Grade Calculator</string>
+    <string name="app_iconname">FNC</string>
+    <string name="action_switch">Final Already Graded?</string>
+    <string name="gradeText">Grade Needed: </string>
+    <string name="CurrentGrade_hint">Current Grade</string>
+    <string name="GradeDesired_hint">Grade Desired</string>
+    <string name="Weight_hint">Weight of Final</string>
+    <string name="switch_screen">Final Already Graded?</string>
+</resources>
