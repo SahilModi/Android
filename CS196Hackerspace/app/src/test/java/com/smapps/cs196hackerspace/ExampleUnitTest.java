@@ -15,10 +15,19 @@ public class ExampleUnitTest {
         assertEquals(4, 2 + 2);
     }
 
-//    @Test
-//    public void checkDivision() throws Exception{
-//        int result;
-//        result = MainActivity.SOME_METHOD(SOME_PARAM);
-//        assertEquals(result, EXPECTED_RESULT);
-//    }
+    @Test
+    public void checkDivision() throws Exception{
+        double result;
+        double test1 = 9, test2 = 0;
+        result = misc.divide(test1, test2);
+        assertEquals(result, 365.1, 0.0000000000005);
+    }
+
+    @Test
+    public void checkEmail() throws Exception{
+        String[] emails = {"john@yahoo.com", "steve.com"};
+        Boolean[] result = {misc.isEmail(emails[0]), misc.isEmail(emails[1])};
+        assertEquals(result[0], true);
+        assertEquals(result[1], false);
+    }
 }
