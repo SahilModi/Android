@@ -25,9 +25,11 @@ public class ExampleUnitTest {
 
     @Test
     public void checkEmail() throws Exception{
-        String[] emails = {"john@yahoo.com", "steve.com"};
-        Boolean[] result = {misc.isEmail(emails[0]), misc.isEmail(emails[1])};
-        assertEquals(result[0], true);
-        assertEquals(result[1], false);
+        String[] emails = {"john@yahoo.com", "steve.com", "bob@@me.com"};
+        Boolean[] result = {misc.isEmail(emails[0]), misc.isEmail(emails[1]),
+        misc.isEmail(emails[2])};
+        assertTrue(result[0]);
+        assertFalse(result[1]);
+        assertFalse(result[2]);
     }
 }
