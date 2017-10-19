@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         final Button myButton = (Button) findViewById(R.id.button);
         final CheckBox myCheckbox = (CheckBox) findViewById(R.id.checkBox);
-        final TextView myTextView = (TextView) findViewById(R.id.textView);
+        final TextView myTextView = (TextView) findViewById(R.id.listTextView);
         final Switch mySwitch = (Switch) findViewById(R.id.switch1);
 
         mySwitch.setChecked(true);
