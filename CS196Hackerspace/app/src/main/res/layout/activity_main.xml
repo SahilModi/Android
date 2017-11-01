@@ -4,57 +4,98 @@
     android:layout_height="match_parent">
 
 
-    <TextView
-        android:id="@+id/listTextView"
+    <EditText
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_above="@+id/button"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/button"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/name"
+        android:layout_alignTop="@+id/name"
+        android:layout_toStartOf="@+id/name"
+        android:labelFor="@+id/name"
+        android:text="@string/nameText"
         android:textColor="@color/defaultBlack"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:paddingBottom="50dp"
-        android:text="@string/text_view_default" />
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/phoneN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/phoneN"
+        android:layout_alignTop="@+id/phoneN"
+        android:layout_toStartOf="@+id/phoneN"
+        android:labelFor="@+id/phoneN"
+        android:text="@string/phoneText"
+        android:textColor="@color/defaultBlack"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button"
+        android:layout_below="@+id/phoneN"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/email"
+        android:layout_alignTop="@+id/email"
+        android:layout_toStartOf="@+id/email"
+        android:labelFor="@+id/email"
+        android:text="@string/emailText"
+        android:textColor="@color/defaultBlack"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPostalAddress" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/address"
+        android:layout_alignTop="@+id/address"
+        android:layout_toStartOf="@+id/address"
+        android:labelFor="@+id/address"
+        android:text="@string/addressText"
+        android:textColor="@color/defaultBlack"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_below="@+id/address"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
         android:text="@string/button_main" />
-
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:text="@string/checkbox_enable"
-        android:layout_below="@+id/button"
-        android:layout_alignStart="@+id/button" />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_below="@+id/checkBox">
-
-        <TextView
-            android:labelFor="@+id/switch1"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="@string/switch1_label"
-            android:textSize="18sp"
-            android:padding="10dp"
-            android:textColor="@color/defaultBlack" />
-
-        <Switch
-            android:id="@+id/switch1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10dp" />
-
-    </LinearLayout>
-
 
 
 </RelativeLayout>

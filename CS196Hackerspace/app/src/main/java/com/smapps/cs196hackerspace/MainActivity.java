@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,6 +18,10 @@ public class MainActivity extends AppCompatActivity {
     //Global declaration allows MainActivity.EXTRA_EXTRA_STRING call
     public static final String LIST_VIEW_CONTENTS = "List View Contents";
     public static final String LIST_VIEW_TITLE = "List View Title";
+    public static final String NAME = "name";
+    public static final String PHONE = "phone";
+    public static final String EMAIL = "email";
+    public static final String ADDRESS = "address";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,22 +29,27 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         final Button myButton = (Button) findViewById(R.id.button);
-        final CheckBox myCheckbox = (CheckBox) findViewById(R.id.checkBox);
-        final TextView myTextView = (TextView) findViewById(R.id.listTextView);
-        final Switch mySwitch = (Switch) findViewById(R.id.switch1);
-
-        mySwitch.setChecked(true);
-        myCheckbox.setChecked(true);
+        final EditText nameET = (EditText) findViewById(R.id.name);
+        final EditText phoneET = (EditText) findViewById(R.id.phoneN);
+        final EditText emailET = (EditText) findViewById(R.id.email);
+        final EditText addressET = (EditText) findViewById(R.id.address);
 
         myButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                myTextView.setText("Loading...");
                 Intent myIntent = new Intent(MainActivity.this, ListViewActivity.class);
                 String[] listViewContents = {"String 1", "String 2", "String 3"};
                 String listViewTitle = "MY LIST VIEW";
+                String name = nameET.getText().toString();
+                String phone = phoneET.getText().toString();
+                String email = emailET.getText().toString();
+                String address = addressET.getText().toString();
                 myIntent.putExtra(LIST_VIEW_CONTENTS, listViewContents);
                 myIntent.putExtra(LIST_VIEW_TITLE, listViewTitle);
+                myIntent.putExtra(NAME, name);
+                myIntent.putExtra(PHONE, phone);
+                myIntent.putExtra(EMAIL, email);
+                myIntent.putExtra(ADDRESS, address);
                 startActivity(myIntent);
             }
         });
@@ -49,36 +59,6 @@ public class MainActivity extends AppCompatActivity {
             public boolean onLongClick(View v) {
                 Toast.makeText(MainActivity.this, "Full Guns Blazing!", Toast.LENGTH_SHORT).show();
                 return true;
-            }
-        });
-
-        mySwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    myButton.setEnabled(true);
-                    myTextView.setText(R.string.text_view_default);
-                } else {
-                    myTextView.setText(R.string.text_view_disabled);
-                    myButton.setEnabled(false);
-                }
-            }
-        });
-
-        myCheckbox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    if (!mySwitch.isChecked()) {
-                        mySwitch.performClick();
-                    }
-                    mySwitch.setEnabled(true);
-                } else {
-                    if (mySwitch.isChecked()) {
-                        mySwitch.performClick();
-                    }
-                    mySwitch.setEnabled(false);
-                }
             }
         });
     }

@@ -42,10 +42,16 @@ public class MyAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        View myView = inflater.inflate(R.layout.activity_list_view, parent, false);
-        TextView text = (TextView) myView.findViewById(R.id.listTextView);
+        View myView = inflater.inflate(R.layout.list_item, parent, false);
+        TextView name = (TextView) myView.findViewById(R.id.nameText);
+        TextView phone = (TextView) myView.findViewById(R.id.phoneText);
+        TextView email = (TextView) myView.findViewById(R.id.emailText);
+        TextView address = (TextView) myView.findViewById(R.id.addressText);
         Log.d("ADAPTER", (String) getItem(position));
-        text.setText((String) getItem(position));
+        name.setText((String) getItem(position));
+        phone.setText((String) getItem(position));
+        email.setText((String) getItem(position));
+        address.setText((String) getItem(position));
 
         return myView;
     }
