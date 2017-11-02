@@ -15,14 +15,12 @@ import java.util.ArrayList;
  */
 
 public class MyAdapter extends BaseAdapter {
-    private Context context;
-    private ArrayList<String> data;
+    private ArrayList<Person> data;
     private LayoutInflater inflater;
 
-    public MyAdapter(Context mContext, ArrayList<String> items){
-        context = mContext;
+    public MyAdapter(Context mContext, ArrayList<Person> items){
         data = items;
-        inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
     @Override
@@ -47,11 +45,12 @@ public class MyAdapter extends BaseAdapter {
         TextView phone = (TextView) myView.findViewById(R.id.phoneText);
         TextView email = (TextView) myView.findViewById(R.id.emailText);
         TextView address = (TextView) myView.findViewById(R.id.addressText);
-        Log.d("ADAPTER", (String) getItem(position));
-        name.setText((String) getItem(position));
-        phone.setText((String) getItem(position));
-        email.setText((String) getItem(position));
-        address.setText((String) getItem(position));
+
+        Person currentPerson = (Person) getItem(position);
+        name.setText(currentPerson.getName());
+        phone.setText(currentPerson.getPhone());
+        email.setText(currentPerson.getEmail());
+        address.setText(currentPerson.getAddress());
 
         return myView;
     }
