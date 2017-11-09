@@ -1,11 +1,13 @@
 package com.smapps.cs196hackerspace;
 
 import android.content.Context;
+import android.media.Image;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -45,12 +47,14 @@ public class MyAdapter extends BaseAdapter {
         TextView phone = (TextView) myView.findViewById(R.id.phoneText);
         TextView email = (TextView) myView.findViewById(R.id.emailText);
         TextView address = (TextView) myView.findViewById(R.id.addressText);
+        ImageView myImage = (ImageView) myView.findViewById(R.id.listItemImage);
 
         Person currentPerson = (Person) getItem(position);
         name.setText(currentPerson.getName());
         phone.setText(currentPerson.getPhone());
         email.setText(currentPerson.getEmail());
         address.setText(currentPerson.getAddress());
+        myImage.setImageBitmap(currentPerson.getImage());
 
         return myView;
     }

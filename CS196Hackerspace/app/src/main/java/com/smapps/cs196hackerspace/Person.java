@@ -1,5 +1,6 @@
 package com.smapps.cs196hackerspace;
 
+import android.graphics.Bitmap;
 import android.os.Parcel;
 import android.os.Parcelable;
 
@@ -9,17 +10,28 @@ import android.os.Parcelable;
 
 public class Person implements Parcelable {
     private String name, phone, email, address;
+    private Bitmap image;
     private static int ID = 0;
 
-    public Person(final String name, final String phone, final String email, final String address){
+    public Person(final String name, final String phone, final String email,
+                  final String address, final Bitmap image){
         this.name = name;
         this.phone = phone;
         this.email = email;
         this.address = address;
+        this.image = image;
         ID++;
     }
 
 
+
+    public Bitmap getImage() {
+        return image;
+    }
+
+    public void setImage(Bitmap image) {
+        this.image = image;
+    }
 
     public String getName() {
         return name;
@@ -57,6 +69,7 @@ public class Person implements Parcelable {
         return ID;
     }
 
+
     @Override
     public int describeContents() {
         return 0;
@@ -68,6 +81,7 @@ public class Person implements Parcelable {
         dest.writeString(this.phone);
         dest.writeString(this.email);
         dest.writeString(this.address);
+        dest.writeParcelable(this.image, flags);
     }
 
     protected Person(Parcel in) {
@@ -75,9 +89,10 @@ public class Person implements Parcelable {
         this.phone = in.readString();
         this.email = in.readString();
         this.address = in.readString();
+        this.image = in.readParcelable(Bitmap.class.getClassLoader());
     }
 
-    public static final Parcelable.Creator<Person> CREATOR = new Parcelable.Creator<Person>() {
+    public static final Creator<Person> CREATOR = new Creator<Person>() {
         @Override
         public Person createFromParcel(Parcel source) {
             return new Person(source);
