@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1022405320076",
+    "firebase_url": "https://cs196hackerspace.firebaseio.com",
+    "project_id": "cs196hackerspace",
+    "storage_bucket": "cs196hackerspace.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1022405320076:android:245e231fb6214ab2",
+        "android_client_info": {
+          "package_name": "com.smapps.cs196hackerspace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1022405320076-vraf60u83s3vgrohd1pdjs4fp9s8scr5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smapps.cs196hackerspace",
+            "certificate_hash": "79e4cc58208c69b587875a7f00b87d9eb90cc1bc"
+          }
+        },
+        {
+          "client_id": "1022405320076-iijd9t5p22t6hn2bpvr8tj0k2tq2n1l1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgN95hYflmGn8nztYoCTlJid5VTTTom3c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1022405320076-iijd9t5p22t6hn2bpvr8tj0k2tq2n1l1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
