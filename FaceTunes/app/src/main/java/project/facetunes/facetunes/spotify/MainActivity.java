@@ -28,7 +28,7 @@ import project.facetunes.facetunes.R;
 // Copyright (c) 2014 Spotify. All rights reserved.
 public class MainActivity extends Activity implements
         SpotifyPlayer.NotificationCallback, ConnectionStateCallback {
-    private final static String CLIENT_ID = "4a2d313ffde44aa9a1da7c115ef7aec5";
+    private final static String CLIENT_ID = "f4606a33cdcf45bf95843013131be78b"; //"4a2d313ffde44aa9a1da7c115ef7aec5" OLD ID;
     private final static String REDIRECT_URI = "facetunes://callback";
     public static String EMOTION = "fear";
     // Request code that will be used to verify if the result comes from correct activity
